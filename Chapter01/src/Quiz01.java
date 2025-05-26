@@ -1,4 +1,4 @@
-public class Max4Method {
+public class Quiz01 {
   public static void main(String[] args) {
     System.out.println("max4(1, 2, 3, 4) = " + max4(1, 2, 3, 4));
     System.out.println("max4(1, 3, 2, 4) = " + max4(1, 3, 2, 4));

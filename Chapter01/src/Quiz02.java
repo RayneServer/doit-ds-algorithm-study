@@ -1,4 +1,4 @@
-public class Min3Method {
+public class Quiz02 {
   public static void main(String[] args) {
     System.out.println("min3(1, 2, 3) = " + min3(1, 2, 3));
     System.out.println("min3(1, 3, 2) = " + min3(1, 3, 2));

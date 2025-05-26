@@ -1,4 +1,4 @@
-public class Median3Method {
+public class Quiz04 {
   public static void main(String[] args) {
     System.out.println("med3(3, 2, 1) = " + med3(3, 2, 1));
     System.out.println("med3(3, 2, 2) = " + med3(3, 2, 2));

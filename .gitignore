@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle
 
+# Coma 2025.09.02
+
 ### Eclipse ###
 .metadata
 bin/
@@ -46,6 +48,7 @@ local.properties
 
 # STS (Spring Tool Suite)
 .springBeans
+application-*.properties
 
 # Code Recommenders
 .recommenders/
@@ -254,9 +257,9 @@ buildNumber.properties
 
 # Eclipse m2e generated files
 # Eclipse Core
-.project
+# .project
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
+# .classpath
 
 ### VisualStudioCode ###
 .vscode/*

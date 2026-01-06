@@ -2,13 +2,13 @@ package dev.coma.data.sort;
 
 import java.util.Scanner;
 
-public class Quiz07 {
+public class Quiz09 {
   public static void main(String[] args) {
     int num;
     int[] arr;
 
     try (Scanner scanner = new Scanner(System.in)) {
-      System.out.println("삽입 정렬 Ver.1++");
+      System.out.println("삽입 정렬 Ver.3");
       System.out.print("요소수: ");
       num = scanner.nextInt();
 
@@ -34,8 +34,10 @@ public class Quiz07 {
 
       printArr(arr);
 
-      for (pointer = i; pointer > 0 && arr[pointer - 1] > temp; pointer--) {
-        arr[pointer] = arr[pointer - 1];
+      pointer = findMyIndex(arr, i - 1, i);
+
+      for (int j = i; j > pointer; j--) {
+        arr[j] = arr[j - 1];
       }
 
       arr[pointer] = temp;
@@ -49,6 +51,26 @@ public class Quiz07 {
     }
 
     System.out.println();
+  }
+
+  private static int findMyIndex(int[] arr, int lastSortIndex, int moveIndex) {
+    if (arr[moveIndex] > arr[lastSortIndex]) return moveIndex;
+
+    int leftPointer = 0;
+    int rightPointer = lastSortIndex;
+    int midPointer = 0;
+
+    while (leftPointer <= rightPointer) {
+      midPointer = (leftPointer + rightPointer) / 2;
+
+      if (arr[midPointer] > arr[moveIndex]) {
+        rightPointer = midPointer - 1;
+      } else {
+        leftPointer = midPointer + 1;
+      }
+    }
+
+    return arr[midPointer] > arr[moveIndex] ? midPointer : midPointer + 1;
   }
 
   private static void printArrMove(int[] arr, int insertIndex, int moveIndex) {

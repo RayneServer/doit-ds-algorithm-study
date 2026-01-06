@@ -8,7 +8,7 @@ public class Quiz06 {
     int[] arr;
 
     try (Scanner scanner = new Scanner(System.in)) {
-      System.out.println("선택 정렬 Ver.1");
+      System.out.println("선택 정렬 Ver.1++");
       System.out.print("요소수: ");
       num = scanner.nextInt();
 

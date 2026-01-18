@@ -1,4 +1,4 @@
-package dev.coma.data.list;
+package dev.coma.data.list.linked;
 
 public class Data implements Comparable<Data> {
   private Integer num;

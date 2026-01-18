@@ -1,4 +1,4 @@
-package dev.coma.data.list;
+package dev.coma.data.list.array;
 
 public enum Menu {
   ADD_FIRST("머리에 노드 추가"),

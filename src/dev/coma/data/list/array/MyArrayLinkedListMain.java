@@ -1,11 +1,11 @@
-package dev.coma.data.list;
+package dev.coma.data.list.array;
 
 import java.util.Objects;
 import java.util.Scanner;
 
-public class MyLinkedListMain {
+public class MyArrayLinkedListMain {
   private static final Scanner SC = new Scanner(System.in);
-  private static final MyLinkedList<Data> DATA_LIST = new MyLinkedList<>();
+  private static final MyArrayLinkedList<Data> DATA_LIST = new MyArrayLinkedList<>(10);
 
   public static void main(String[] args) {
     while (true) {

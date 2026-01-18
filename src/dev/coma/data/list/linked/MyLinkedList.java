@@ -1,4 +1,4 @@
-package dev.coma.data.list;
+package dev.coma.data.list.linked;
 
 public class MyLinkedList<E extends Comparable<E>> {
   private Node<E> head;
@@ -126,6 +126,7 @@ public class MyLinkedList<E extends Comparable<E>> {
           prevNode.next = selectNode.next;
 
           selectNode = selectNode.next;
+          size--;
         } else {
           prevNode = selectNode;
           selectNode = selectNode.next;
